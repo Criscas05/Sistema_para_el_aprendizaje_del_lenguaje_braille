@@ -170,13 +170,13 @@ while True:
     ############ POR FILAS ##############
     for i in range(relleno.shape[0]):
         for k in range(relleno.shape[1]):
-            g = g + relleno[i,k]
+            g = g + res_final[i,k]
         v.append(g/relleno.shape[0])
         g = 0
     ############ POR COLUMNAS ###########
     for i2 in range(relleno.shape[1]):
         for k2 in range(relleno.shape[0]):
-            g2 = g2 + relleno[k2,i2]
+            g2 = g2 + res_final[k2,i2]
         v2.append(g2/relleno.shape[1])
         g2 = 0;
     
